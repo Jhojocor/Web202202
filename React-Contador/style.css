@@ -73,6 +73,7 @@ h1 {
 button {
   /*box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.295);*/
   box-shadow: 0px 0px 41px 33px rgba(255, 255, 255, 0.1);
+  border-color: #ffffff24;
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 1em;
