@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+.ContainerFilter {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 60px;
+    gap: 10px;
+
+    & .TitleFilter {
+        font-style: normal;
+        color: #ABABAB;
+    }
+
+    & .Filters {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+
+        & a {
+            padding-right: 16px;
+            border-right: #D9D9D9 1px solid;
+
+            &:hover img {
+                border-bottom: #D9D9D9 3px solid;
+                filter: invert(1);
+                padding: 2px;
+            }
+        }
+    }
+}

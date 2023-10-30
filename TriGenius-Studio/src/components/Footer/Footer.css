@@ -1,0 +1,37 @@
+.containerfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3A2C20;
+    padding: 20px 0;
+    margin-top: 100px;
+
+    & .Copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    & .Logo {
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+
+        & img {
+            width: 200px;
+        }
+    }
+
+    & .Social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        width: 150px;
+
+        & :hover {
+            transform: scale(1.1);
+        }
+    }
+}

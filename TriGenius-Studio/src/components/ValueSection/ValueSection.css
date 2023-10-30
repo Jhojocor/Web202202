@@ -1,0 +1,49 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    color: #E48A32;
+
+    & h1 {
+        border-bottom: #E48A32 8px solid;
+        font-size: 3rem;
+    }
+}
+
+.Values {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 32px 90px;
+
+    & .cardValue {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        & .imgValue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 220px;
+            width: 120px;
+        }
+
+        & .titleValue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & h1 {
+                font-size: 32px;
+            }
+        }
+
+        & .textValue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

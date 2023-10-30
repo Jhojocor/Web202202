@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+.AddProject{
+    width: 240px;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #FF7E00;
+}
+
+.AddProject img{
+    margin-top: 10%;
+    width: 60px;
+    height: 60px;
+}
+
+.AddProject h3{
+    top: 50%;
+    font-family: 'Poppins', sans-serif;
+    color: #FF7E00;
+}

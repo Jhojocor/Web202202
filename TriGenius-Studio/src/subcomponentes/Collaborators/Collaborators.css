@@ -1,0 +1,9 @@
+.CollaboratosContainer {
+    display: flex;
+    align-items: center;
+
+    & img {
+        width: 80px;
+        border-radius: 50%;
+    }
+}

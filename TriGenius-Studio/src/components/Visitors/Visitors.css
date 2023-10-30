@@ -1,0 +1,20 @@
+.visitor-container{
+    width: 100%;
+}
+
+.visitor-title{
+    font-size: 42px;
+}
+
+.visitor-hplink{
+    font-size: 30px;
+    color: rgba(255, 126, 0, 1);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.ideaImg{
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 60px;
+}

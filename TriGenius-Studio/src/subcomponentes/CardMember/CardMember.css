@@ -1,0 +1,60 @@
+.CardMember {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 32px;
+    margin: 12px 160px;
+    padding: 15px;
+
+    & .imgMember {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        -webkit-filter: drop-shadow(3px 3px 6px rgba(91, 91, 91, 0.5));
+        filter: drop-shadow(3px 3px 6px rgba(91, 91, 91, 0.5));
+    }
+
+    & .infoMember{
+        padding: 35px;
+    }
+
+    & .nameMember {
+        display: flex;
+        flex-direction: row;
+
+        & h1 {
+            font-size: 40px;
+        }
+
+        & .name {
+            color: #FF7E00;
+        }
+
+        & .lastname {
+            display: flex;
+            padding: 0 10px;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: #FF7E00;
+            color: transparent;
+        }
+    }
+}
+
+.CardMember.even {
+    grid-template-columns: auto auto;
+}
+
+.CardMember.odd {
+    grid-template-columns: auto auto;
+}
+
+.CardMember.even .imgMember {
+    order: 2;
+    /* Cambia el orden de la imagen y la información */
+}
+
+.CardMember.odd .imgMember {
+    order: 2;
+    /* Mantén el orden por defecto */
+}

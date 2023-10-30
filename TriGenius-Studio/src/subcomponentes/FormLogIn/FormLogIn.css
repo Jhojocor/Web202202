@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+.containerLogIn {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & h1 {
+        font-size: 42px;
+        line-height: 125%;
+
+        & span {
+            color: rgba(255, 126, 0, 1);
+        }
+    }
+
+    & .inputsLogIn {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+
+        & .inputFormLI {
+            display: flex;
+            padding: 18px;
+            color: #3b3b3b;
+            width: 100%;
+            border-radius: 8px;
+            background-color: rgba(255, 242, 228, 1);
+
+            &:active {
+                border: 2px solid;
+            }
+        }
+
+        & label {
+            margin-bottom: 2px;
+        }
+
+        & .remind-text{
+            display: block;
+            font-size: 13px;
+            text-align: center;
+            margin: 7px;
+        }
+
+        & .remind-hplink{
+            color: rgba(255, 126, 0, 1);
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+
+    & .ContainerBtn {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        gap: 120px;
+
+        & button {
+            background-color: #268bff;
+            color: white;
+            padding: 16px 90px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 2px 2px 5px 1px rgba(45, 45, 45, 0.2);
+
+            &:hover {
+                background-color: white;
+                color: #4ea1ff;
+                border: 2px solid #4ea1ff;
+            }
+        }
+    }
+}

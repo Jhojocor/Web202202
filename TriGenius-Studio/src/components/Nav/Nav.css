@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+.containerNav {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    background-color: #855D3D;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    margin: 20px 0;
+    gap: 12px;
+    border-radius: 180px;
+    color: #F5F3E6;
+    width: 90%;
+
+    & .hyperlinks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 30px;
+
+        & a:hover {
+            font-weight: bold;
+            border-bottom: 3px solid;
+        }
+    }
+
+    & .Logo {
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+
+        & img {
+            width: 200px;
+        }
+    }
+}

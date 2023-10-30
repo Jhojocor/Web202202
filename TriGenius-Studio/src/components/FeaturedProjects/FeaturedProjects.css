@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+.FeaturedProjects{
+    width: 100%;
+    height: 1200px;
+    padding: 40px;
+}
+
+.FeaturedTittle{
+    width: 600px;
+    margin-top: 30px;
+    margin-left: -550px;
+    text-align: left;
+}
+
+.FeaturedTittle h2{
+    margin: -50px;
+}
+
+.SmallTittle{
+    color: #E48A32;
+    font-size: 78px;
+    font-family: Poppins;
+    font-weight: 700px;
+    word-wrap: break-word
+}
+
+.BigTittle{
+    font-size: 128px;
+    font-family: Poppins;
+    font-weight: 700px;
+    word-wrap: break-word;
+    outline-offset: 20px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #E48A32;
+}
+
+.ProjectsFeatured{
+    width: 80%;
+    height: 800px;
+    margin: 40px auto;
+}
+
+.Project{
+    margin: 5px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    filter: grayscale(100%);
+}
+
+.Project *{
+    margin: 10px;
+}
+
+.Project:hover{
+    transition: 1.05s;
+    scale: 1.04;
+    filter: grayscale(0%);
+}

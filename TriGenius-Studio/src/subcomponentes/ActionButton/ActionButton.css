@@ -1,0 +1,18 @@
+.ActionButton {
+    width: auto;
+    background-color: #FF7E00;
+    color: white;
+    height: 55px;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: large;
+    margin: 20px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        scale: 1.1;
+        transition: 1.05s;
+    }
+}

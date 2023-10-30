@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
+
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & .containerInputs {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        & .inputMessage {
+            display: flex;
+            height: 200px;
+        }
+
+        & .inputForm {
+            display: flex;
+            padding: 18px;
+            color: #3b3b3b;
+            width: 600px;
+            border-radius: 8px;
+
+            &:active {
+                border: 2px solid;
+            }
+        }
+    }
+
+    & .ContainerBtn {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        gap: 120px;
+
+        & button {
+            background-color: #268bff;
+            color: white;
+            padding: 16px 90px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 2px 2px 5px 1px rgba(45, 45, 45, 0.2);
+
+            &:hover {
+                background-color: white;
+                color: #4ea1ff;
+            }
+        }
+    }
+}

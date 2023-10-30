@@ -1,0 +1,61 @@
+section {
+    display: flex;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.littleInfo {
+    border-radius: 10px;
+    background: rgba(242, 242, 242, 0.92);
+    padding: 16px 60px;
+    box-shadow: 2px 2px 5px 1px rgba(56, 56, 56, 0.2);
+    z-index: 1;
+    position: absolute;
+    margin-top: 585px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+p {
+    margin-top: 12px;
+}
+
+.btn-left {
+    position: absolute;
+    margin-top: 1100px;
+    width: 70px;
+    opacity: 35%;
+    margin-left: -1050px;
+
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+.btn-right {
+    position: absolute;
+    margin-top: 1100px;
+    width: 70px;
+    opacity: 35%;
+    margin-left: 1250px;
+
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+.equipoBG {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    margin-top: 750px;
+    filter: blur(4px);
+}

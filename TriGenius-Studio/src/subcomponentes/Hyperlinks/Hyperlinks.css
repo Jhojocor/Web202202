@@ -1,0 +1,12 @@
+.hyperlinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 30px;
+
+    & a:hover {
+        font-weight: bold;
+        border-bottom: 3px solid;
+    }
+}
