@@ -46,7 +46,7 @@ export const Header = memo(function Header (){
                 <ul>
                     {
                         items.map((item) =>{
-                            return <Dropdown item={item} />
+                            return <Dropdown key={item.id} item={item} />
                         })
                     }
                 </ul>

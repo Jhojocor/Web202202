@@ -24,31 +24,33 @@ export const useUserApp = () => {
   useEffect(() => {
     console.log('useApp is running')
     getMovies()
-  }, [])
+  }, [getMovies])
 
   // Fetching
 
   const getMovies = useCallback(() => {
+    setIsLoading(true);
     fetchMovies()
-      .then(newMovie => setMovies(newMovie))
-      .catch(e => setError(e))
-      .finally(() => setIsLoading(false))
-  }, [])
+      .then((newMovies) => {
+        setMovies(newMovies);
+        setError(null); // Limpiar el error si la solicitud es exitosa
+      })
+      .catch((e) => setError(e))
+      .finally(() => setIsLoading(false));
+  }, [setMovies, setError, setIsLoading]);
 
   // Filter Movies
 
   const movieFilter = selectedCategory === 'All'
-    ? Movies
-    : Movies.filter(movie => {
-      // Si " ", pertenece a "Other"
-      return selectedCategory === 'Other' ? !movie.rt_score : movie.rt_score === selectedCategory
-    })
-
+  ? Movies
+  : Movies.filter((movie) => {
+    // Si " ", pertenece a "Other"
+    return selectedCategory === 'Other' ? !movie.rt_score : movie.rt_score === selectedCategory;
+  });
   return (
     {
       error,
       movieFilter,
-      moviesQuantity,
       selectedCategory,
       setSelectedCategory,
       isLoading
