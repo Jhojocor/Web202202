@@ -1,48 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Poppins:wght@700&display=swap');
 
-.FeaturedProjects{
+.FeaturedProjects {
     width: 100%;
     height: 1200px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-.FeaturedTittle{
+.FeaturedTittle {
     width: 600px;
     margin-top: 30px;
-    margin-left: -550px;
-    text-align: left;
+    text-align: center;
 }
 
-.FeaturedTittle h2{
-    margin: -50px;
-}
-
-.SmallTittle{
+.SmallTittle {
     color: #E48A32;
-    font-size: 78px;
     font-family: Poppins;
     font-weight: 700px;
     word-wrap: break-word
 }
 
-.BigTittle{
-    font-size: 128px;
+.BigTittle {
     font-family: Poppins;
     font-weight: 700px;
     word-wrap: break-word;
     outline-offset: 20px;
     color: transparent;
-    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #E48A32;
 }
 
-.ProjectsFeatured{
+.ProjectsFeatured {
     width: 80%;
     height: 800px;
     margin: 40px auto;
 }
 
-.Project{
+.Project {
     margin: 5px auto;
     width: 100%;
     height: auto;
@@ -52,12 +47,56 @@
     filter: grayscale(100%);
 }
 
-.Project *{
+.Project * {
     margin: 10px;
 }
 
-.Project:hover{
+.Project:hover {
     transition: 1.05s;
     scale: 1.04;
     filter: grayscale(0%);
+}
+
+@media (max-width: 640px) {
+    .FeaturedProjects {
+        & .FeaturedTittle {
+            align-items: center;
+            width: 100%;
+            margin: 0;
+
+            & h2 {
+                margin: -1px;
+            }
+        }
+
+        .ProjectsFeatured {
+            display: flex;
+            width: 100%;
+
+            & .Project {
+                width: 100%;
+
+                & .Card {
+                    display: none;
+                }
+
+                & .Preview {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    & .FeaturedTittle {
+        align-items: center;
+        margin-top: -10px;
+
+        & h2 {
+            margin: -4px;
+        }
+    }
 }

@@ -7,3 +7,15 @@
         border-radius: 50%;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .CollaboratosContainer {
+        display: flex;
+        align-items: center;
+    
+        & img {
+            width: 60px;
+            border-radius: 50%;
+        }
+    }
+}

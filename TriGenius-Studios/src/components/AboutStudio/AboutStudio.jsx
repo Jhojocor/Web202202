@@ -6,11 +6,11 @@ export function AboutStudio () {
     <>
       <div className='ContainerAboutStudio'>
         <div className='logoCard'>
-          <img src='./src/images/LogoTextBlack.png' alt='' srcset='' />
+          <img src='./src/images/logotipoN.png' alt='logo'/>
         </div>
         <div className='InfoStudio'>
           <div className='nameStudio'>
-            <h1>TriGenius</h1>
+            <h1 className='font-semibold'>TriGenius Studios</h1>
           </div>
           <div className='description'>
             <p>

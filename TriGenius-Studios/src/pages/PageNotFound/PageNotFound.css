@@ -1,0 +1,21 @@
+#PageNotFound{
+    background-color: #FEFFFA;
+    padding: 30px;
+
+    & li {
+        list-style-type: disc;
+      }
+}
+
+#title {
+    color: rgba(255, 126, 0, 1);
+    margin: 3px;
+}
+
+.reasons{
+    margin-top: 20px;
+}
+
+.reasonsList{
+    margin-left: 20px;
+}

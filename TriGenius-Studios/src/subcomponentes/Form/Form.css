@@ -12,18 +12,23 @@
 
         & .inputMessage {
             display: flex;
-            height: 200px;
+            height: 150px;
         }
 
         & .inputForm {
             display: flex;
             padding: 18px;
-            color: #3b3b3b;
-            width: 600px;
+            background-color: rgba(91, 168, 255, 0.2);
             border-radius: 8px;
+            border: 2px transparent;
 
-            &:active {
+            &:focus {
                 border: 2px solid;
+                color: #268bff;
+                border-color: rgb(36, 138, 255);
+                outline: 0 none;
+                box-shadow: 0 1px 1px rgba(36, 138, 255, 0.08) inset,
+      0 0 8px rgba(36, 138, 255, 0.6);
             }
         }
     }
@@ -35,16 +40,18 @@
         gap: 120px;
 
         & button {
-            background-color: #268bff;
+            background-color: rgb(36, 138, 255);
             color: white;
             padding: 16px 90px;
             border-radius: 8px;
-            border: none;
-            box-shadow: 2px 2px 5px 1px rgba(45, 45, 45, 0.2);
+            border: 2px transparent;
+            box-shadow: 2px 2px 5px 1px rgba(36, 138, 255, 0.3);
 
             &:hover {
                 background-color: white;
-                color: #4ea1ff;
+                color: #268bff;
+                border: 2px solid;
+                border-color: #268bff;
             }
         }
     }

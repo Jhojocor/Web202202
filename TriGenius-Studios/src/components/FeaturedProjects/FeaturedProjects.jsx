@@ -23,15 +23,15 @@ export function FeaturedProjects () {
 
   return (
     <section className='FeaturedProjects'>
-      <div className='FeaturedTittle'>
-        <h2 className='SmallTittle'>Featured</h2>
-        <h2 className='BigTittle'>Projects</h2>
+      <div className='FeaturedTittle flex flex-col font-semibold'>
+        <h2 className='SmallTittle text-3xl sm:text-7xl'>Featured</h2>
+        <h2 className='BigTittle text-6xl sm:text-9xl'>Projects</h2>
       </div>
       <section className='ProjectsFeatured'>
         {projectData.map((project, index) => (
           <div className='Project' key={index}>
-            <Card url={project.cardUrl} />
-            <Preview previewUrl={project.previewUrl} tittle={project.tittle} />
+            <Card url={project.cardUrl} className='card' />
+            <Preview previewUrl={project.previewUrl} tittle={project.tittle} className='preview' />
           </div>
         ))}
         <div className='ActionButton2'>

@@ -7,7 +7,7 @@ export function ProjectsPage () {
     <>
       <section>
         <Nav />
-        <div className='FeaturedTittle'>
+        <div className='FeaturedTittle font-semibold text-5xl sm:text-8xl'>
           <h2 className='SmallTittle'>Our</h2>
           <h2 className='BigTittle'>Projects</h2>
         </div>

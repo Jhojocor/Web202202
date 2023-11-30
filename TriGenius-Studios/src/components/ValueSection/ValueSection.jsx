@@ -1,11 +1,11 @@
 import React from 'react'
 import './ValueSection.css'
 
-export function ValueSection () {
+export function ValueSection() {
   const valueData = [
     {
       imgValue: './src/images/Creativity.png',
-      title: 'Creativty',
+      title: 'Creativity',
       text: 'We encourage creativity in all aspects of our work, seeking innovative and original solutions.'
     },
     {
@@ -15,12 +15,12 @@ export function ValueSection () {
     },
     {
       imgValue: './src/images/Adaptability.png',
-      title: 'Adaptabilty',
+      title: 'Adaptability',
       text: 'We embrace change and are willing to adapt to the changing needs of our clients and the market.'
     },
     {
       imgValue: './src/images/Responsability.png',
-      title: 'Responsabilty',
+      title: 'Responsability',
       text: 'We take responsibility for our projects and strive to meet deadlines and objectives.'
     },
     {
@@ -32,17 +32,17 @@ export function ValueSection () {
 
   return (
     <>
-      <div className='ourValuesContainer'>
+      <div className='ourValuesContainer w-full'>
         <div className='title'>
-          <h1>Our Values</h1>
+          <h1 className='font-semibold'>Our Values</h1>
         </div>
         <div className='Values'>
           {valueData.map((value, i) => (
             <div className='cardValue' key={i}>
               <div className='imgValue'>
-                <img src={value.imgValue} />
+                <img src={value.imgValue} className='w-10 sm:w-24 sm:h-28' />
               </div>
-              <div className='titleValue'>
+              <div className='titleValue text-lg font-medium sm:text-3xl sm:font-semibold'>
                 <h1>{value.title}</h1>
               </div>
               <div className='textValue'>

@@ -9,14 +9,26 @@
     & .imgMember {
         display: flex;
         justify-content: center;
-        align-items: center;
         width: 300px;
         -webkit-filter: drop-shadow(3px 3px 6px rgba(91, 91, 91, 0.5));
         filter: drop-shadow(3px 3px 6px rgba(91, 91, 91, 0.5));
+
+        &:hover {
+            width: 350px;
+            transition-duration: 1000ms;
+            -webkit-filter: drop-shadow(3px 3px 6px rgba(222, 126, 2, 0.7));
+            filter: drop-shadow(3px 3px 12px rgba(222, 126, 2, 0.7));
+        }
+
+        &::after {
+            width: 300px;
+            transition-duration: 1000ms;
+        }
     }
 
-    & .infoMember{
+    & .infoMember {
         padding: 35px;
+        text-align: left;
     }
 
     & .nameMember {
@@ -41,20 +53,20 @@
     }
 }
 
-.CardMember.even {
-    grid-template-columns: auto auto;
-}
+@media (max-width: 768px) {
+    .CardMember {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 12px;
+        padding: 12px 0;
 
-.CardMember.odd {
-    grid-template-columns: auto auto;
-}
+        & .infoMember {
+            padding: 0 32px;
 
-.CardMember.even .imgMember {
-    order: 2;
-    /* Cambia el orden de la imagen y la información */
-}
-
-.CardMember.odd .imgMember {
-    order: 2;
-    /* Mantén el orden por defecto */
+            & .descriptionMember {
+                text-align: left;
+            }
+        }
+    }
 }

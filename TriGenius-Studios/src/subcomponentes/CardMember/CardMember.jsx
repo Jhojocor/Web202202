@@ -1,7 +1,7 @@
 import React from 'react'
 import './CardMember.css'
 
-export function CardMember () {
+export function CardMember() {
   const membersData = [
     {
       imgValue: './src/images/JhohanCircle.png',
@@ -22,7 +22,7 @@ export function CardMember () {
       name: 'Alexander',
       lastname: 'Rueda',
       description:
-        "You can call me Alex, I'm passionate about videogames, programming and design. My interest in programming began in high school, when I decided to take a technical course in \"Multimedia Design and Integration\". This experience introduced me to the fascinating world of digital creation and since then, I have been immersed in developing my skills. I love to combine both elements to create interactive and visually appealing experiences. I'm constantly looking for new ways to merge my love for videogames with my programming and design skills, with the goal of bringing creative and exciting projects to fruition. I look forward to sharing some of my creations with you!"
+        "You can call me Alex, I'm passionate about videogames, programming and design. My interest in programming began in high school, when I decided to take a technical course in \"Multimedia Design and Integration\". This experience introduced me to the fascinating world of digital creation and since then, I have been immersed in developing my skills. I love to combine both elements to create interactive and visually appealing experiences. "
     }
   ]
 
@@ -34,9 +34,9 @@ export function CardMember () {
             <img src={member.imgValue} />
           </div>
           <div className='infoMember'>
-            <div className='nameMember'>
-              <h1 className='name'>{member.name}</h1>
-              <span className='lastname'>
+            <div className='nameMember '>
+              <h1 className='name font-bold'>{member.name}</h1>
+              <span className='lastname font-bold'>
                 <h1>{member.lastname}</h1>
               </span>
             </div>

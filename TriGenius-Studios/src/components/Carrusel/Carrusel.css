@@ -3,7 +3,7 @@ section {
     text-align: center;
     margin: 20px 0;
 }
-
+/*
 .littleInfo {
     border-radius: 10px;
     background: rgba(242, 242, 242, 0.92);
@@ -27,6 +27,7 @@ h2 {
 p {
     margin-top: 12px;
 }
+*/
 
 .btn-left {
     position: absolute;

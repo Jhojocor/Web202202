@@ -1,18 +1,8 @@
 .LogInPage{
-    padding: 30px 100px;
+    background-color: #FEFFFA;
 }
-
 .logo-logIn {
-    width: 200px;
     text-align: center;
     display: flex;
     margin: 5px auto;
-    padding: 15px;
-}
-
-.grid-LogIn{
-    display: grid;
-    height: 600px;
-    margin-top: 20px;
-    grid-template-columns: repeat(2, 1fr)
 }
